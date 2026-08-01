@@ -14,15 +14,6 @@ body {
     padding: 20px;
 }
 
-h1 {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 24px;
-    color: #333;
-}
-
 .card-container {
     display: flex;
     justify-content: center;
@@ -37,24 +28,30 @@ h1 {
     width: 100%;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    /* чтобы углы карты и полосы совпадали */
 }
 
 .card-header {
-    background: red;
-    /* оранжевый цвет */
-    height: 8px;
-    width: 100%;
-    display: block;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    background: #ff6b00;
+    padding: 20px 30px;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-title {
+    font-size: 18px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin: 0;
 }
 
 form {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 30px;
 }
 
 .form-group {
@@ -64,9 +61,10 @@ form {
 }
 
 .form-group label {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
-    color: #333;
+    color: #666;
+    text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
@@ -83,6 +81,10 @@ form {
     border-color: #4a90d9;
 }
 
+.form-group input::placeholder {
+    color: #999;
+}
+
 .form-row {
     display: flex;
     gap: 15px;
@@ -92,19 +94,19 @@ form {
     flex: 1;
 }
 
-.submit-btn {
-    background: #4a90d9;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 14px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    margin-top: 5px;
+/* Оранжевая полоса через псевдоэлемент */
+.card {
+    position: relative;
 }
 
-.submit-btn:hover {
-    background: #357abd;
+.card::before {
+    content: '';
+    display: block;
+    background: #ff6b00;
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px 15px 0 0;
 }

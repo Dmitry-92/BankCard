@@ -9,46 +9,42 @@
 </head>
 
 <body>
-    <h1>Форма для кредитной карты</h1>
-
-    <!-- Здесь будет форма -->
     <div class="card-container">
         <div class="card">
-            <!-- Оранжевая полоса -->
+            <!-- Оранжевая полоса поверх заголовка -->
             <div class="card-header">
-                <div class="orange-strip"></div>
+                <h2 class="card-title">CREDIT CARD DETAILS</h2>
             </div>
 
-            <form id="creditCardForm">
+            <div class="card-body">
 
-                <!-- Номер кредитной карты -->
-                <div class="form-group">
-                    <label for="cardNumber">Номер карты</label>
-                    <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000" maxlength="19">
-                </div>
-
-                <!-- Имя владельца -->
-                <div class="form-group">
-                    <label for="cardHolder">Имя владельца</label>
-                    <input type="text" id="cardHolder" placeholder="IVAN IVANOV" maxlength="30">
-                </div>
-
-                <!-- Срок действия и CVV -->
-                <div class="form-row">
-                    <div class="form-group half">
-                        <label for="expiryDate">Срок действия</label>
-                        <input type="text" id="expiryDate" placeholder="ММ / ГГ" maxlength="7">
+                <form id="creditCardForm">
+                    <!-- Номер карты -->
+                    <div class="form-group">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19">
                     </div>
-                    <div class="form-group half">
-                        <label for="cvv">CVV / CVN</label>
-                        <input type="password" id="cvv" placeholder="***" maxlength="3">
+
+                    <!-- Имя владельца -->
+                    <div class="form-group">
+                        <label for="cardHolder">Name On Card</label>
+                        <input type="text" id="cardHolder" placeholder="Name Surname" maxlength="30">
                     </div>
-                </div>
-                <!-- Кнопка отправки -->
-                <button type="submit" class="submit-btn">Оплатить</button>
+
+                    <!-- Срок действия и CVV -->
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <label for="expiryDate">Expiry Date</label>
+                            <input type="text" id="expiryDate" placeholder="MM / YY" maxlength="7">
+                        </div>
+                        <div class="form-group half">
+                            <label for="cvv">CVV / CVN</label>
+                            <input type="password" id="cvv" placeholder="***" maxlength="3">
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
-        </form>
-    </div>
     </div>
 </body>
 
