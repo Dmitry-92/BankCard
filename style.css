@@ -34,15 +34,26 @@ h1 {
 .card {
     background: white;
     border-radius: 15px;
-    padding: 30px;
+    padding: 0;
+    /* убираем отступы, так как полоса будет сверху */
     width: 100%;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /* чтобы углы карты и полосы совпадали */
+}
+
+.card-header {
+    background: #ff6b00;
+    /* оранжевый цвет */
+    height: 8px;
+    width: 100%;
 }
 
 form {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 30px;
 }
 
 .form-group {
