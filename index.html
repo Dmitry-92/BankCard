@@ -22,29 +22,46 @@
                     <!-- Номер карты -->
                     <div class="form-group">
                         <label for="cardNumber">Card Number</label>
-                        <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19">
-                    </div>
-
-                    <!-- Имя владельца -->
-                    <div class="form-group">
-                        <label for="cardHolder">Name On Card</label>
-                        <input type="text" id="cardHolder" placeholder="Name Surname" maxlength="30">
-                    </div>
-
-                    <!-- Срок действия и CVV -->
-                    <div class="form-row">
-                        <div class="form-group half">
-                            <label for="expiryDate">Expiry Date</label>
-                            <input type="text" id="expiryDate" placeholder="MM / YY" maxlength="7">
-                        </div>
-                        <div class="form-group half">
-                            <label for="cvv">CVV / CVN</label>
-                            <input type="password" id="cvv" placeholder="***" maxlength="3">
+                        <div class="input-wrapper">
+                            <img src="images/username.png" alt="card" class="input-icon">
+                            <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19">
+                            <img src="images/valid.png" alt="valid" class="input-status">
                         </div>
                     </div>
-                </form>
             </div>
+
+            <!-- Имя владельца -->
+            <div class="form-group">
+                <label for="cardHolder">Name On Card</label>
+                <div class="input-wrapper">
+                    <img src="images/username.png" alt="user" class="input-icon">
+                    <input type="text" id="cardHolder" placeholder="Name Surname" maxlength="30">
+                    <img src="images/invalid.png" alt="invalid" class="input-status">
+                </div>
+            </div>
+
+            <!-- Срок действия и CVV -->
+            <div class="form-row">
+                <div class="form-group half">
+                    <label for="expiryDate">Expiry Date</label>
+                    <div class="input-wrapper">
+                        <img src="images/email.png" alt="calendar" class="input-icon">
+                        <input type="text" id="expiryDate" placeholder="MM / YY" maxlength="7">
+                    </div>
+                </div>
+                <div class="form-group half">
+                    <label for="cvv">CVV / CVN</label>
+                    <div class="input-wrapper">
+                        <img src="images/pswd.png" alt="cvv" class="input-icon">
+                        <input type="password" id="cvv" placeholder="***" maxlength="3">
+                    </div>
+                </div>
+            </div>
+            <!-- Кнопка отправки -->
+            <button type="submit" class="submit-btn">Оплатить</button>
+            </form>
         </div>
+    </div>
     </div>
 </body>
 

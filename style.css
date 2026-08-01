@@ -110,3 +110,47 @@ form {
     left: 0;
     border-radius: 15px 15px 0 0;
 }
+
+/* Стили для иконок */
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.input-icon {
+    position: absolute;
+    left: 12px;
+    width: 18px;
+    height: 18px;
+    opacity: 0.5;
+}
+
+.input-status {
+    position: absolute;
+    right: 12px;
+    width: 18px;
+    height: 18px;
+}
+
+/* Стили для состояний полей */
+.form-group input:focus {
+    outline: none;
+    border-color: #4a90d9;
+}
+
+/* Красная обводка для невалидного поля */
+.form-group input.invalid {
+    border-color: #ff4444;
+}
+
+/* Зеленая обводка для валидного поля */
+.form-group input.valid {
+    border-color: #4CAF50;
+}
