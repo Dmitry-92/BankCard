@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Форма для кредитной карты</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -15,7 +15,9 @@
     <div class="card-container">
         <div class="card">
             <!-- Оранжевая полоса -->
-            <div class="card-header"></div>
+            <div class="card-header">
+                <div class="orange-strip"></div>
+            </div>
 
             <form id="creditCardForm">
 
@@ -41,11 +43,12 @@
                         <label for="cvv">CVV / CVN</label>
                         <input type="password" id="cvv" placeholder="***" maxlength="3">
                     </div>
-                    <!-- Кнопка отправки -->
-                    <button type="submit" class="submit-btn">Оплатить</button>
                 </div>
-            </form>
+                <!-- Кнопка отправки -->
+                <button type="submit" class="submit-btn">Оплатить</button>
         </div>
+        </form>
+    </div>
     </div>
 </body>
 
